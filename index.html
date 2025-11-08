@@ -1,85 +1,272 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Somnath Damale — DevOps · Cloud · AI</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<script defer src="assets/js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somnath Damale - DevOps Engineer specializing in CI/CD, Cloud Infrastructure, and DevSecOps">
+    <title>Somnath Damale | DevOps & Cloud Engineer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="theme-cyber">
-<nav class="nav">
-  <div class="brand">Somnath Damale</div>
-  <ul class="nav-links">
-    <li><a href="#home" class="active">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="https://github.com/i-damale" target="_blank">GitHub</a></li>
-  </ul>
-</nav>
+<body>
+    <!-- Animated Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+    
+    <!-- Cyber Grid Background -->
+    <div class="cyber-grid"></div>
 
-<header id="home" class="hero">
-  <div id="ninja-stage" class="ninja-stage" aria-hidden="true"></div>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="brand">SD_DevOps</div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://github.com/i-damale" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a></li>
+        </ul>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+    </nav>
 
-  <div class="hero-content">
-    <h1 id="typewriter" data-text='["Deploying Somnath Damale v2.0...", "DevOps · Cloud · DevSecOps · AI", "Engineering the Future: Where Cloud Meets Intelligence"]'></h1>
-    <p class="lead">I build secure CI/CD pipelines, automate cloud infra, and integrate AI into production workflows.</p>
-    <div class="cta">
-      <a class="btn" href="#projects">View Projects</a>
-      <a class="btn ghost" href="#contact">Hire Me</a>
-    </div>
-    <div class="pc-wrap" aria-hidden="true">
-      <img id="pc-image" src="assets/img/pc.png" alt="PC screenshot">
-    </div>
-  </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <!-- Animated Ninja Shuriken -->
+            <div class="ninja-container">
+                <svg class="shuriken" viewBox="0 0 100 100">
+                    <path d="M50,10 L60,40 L90,30 L70,50 L90,70 L60,60 L50,90 L40,60 L10,70 L30,50 L10,30 L40,40 Z" 
+                          fill="currentColor" opacity="0.8" />
+                </svg>
+                <div class="quantum-glow"></div>
+            </div>
 
-  <canvas id="particle-canvas"></canvas>
-</header>
+            <h1 class="hero-title">
+                <span id="typewriter" class="gradient-text"></span>
+                <span class="cursor">_</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                I build secure CI/CD pipelines, automate cloud infrastructure, and integrate AI into production workflows.
+            </p>
+            
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-ghost">Hire Me</a>
+            </div>
+            
+            <div class="scroll-indicator">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+        </div>
+    </section>
 
-<main>
-  <section id="about" class="section glass">
-    <h2>About Me</h2>
-    <p>Analytical and detail-oriented DevOps Engineer with hands-on experience in CI/CD, automation, and cloud infrastructure. I combine analytics + automation to design resilient systems and secure deployment pipelines.</p>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title gradient-text">Core Expertise</h2>
+            <div class="skills-grid">
+                <div class="card glass">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="4 17 10 11 4 5"></polyline>
+                            <line x1="12" y1="19" x2="20" y2="19"></line>
+                        </svg>
+                    </div>
+                    <h3>CI/CD & Automation</h3>
+                    <p>Jenkins pipelines, GitHub Actions, Docker, container orchestration, and robust rollback strategies.</p>
+                </div>
 
-  <section id="projects" class="section glass">
-    <h2>Projects</h2>
-    <div class="grid-projects">
-      <div class="proj">
-        <img src="assets/img/project-jenkins.png" alt="Jenkins project image">
-        <h3>Jenkins CI/CD + DevSecOps</h3>
-        <p>Multi-stage pipeline with security gates and automated deployment to AWS EC2.</p>
-        <a class="btn" href="https://github.com/i-damale/mern-devsecops-project" target="_blank">View Repo</a>
-      </div>
-      <div class="proj">
-        <img src="assets/img/project-aws.png" alt="AWS project image">
-        <h3>AWS Automation</h3>
-        <p>EC2 provisioning scripts, CloudWatch alarms, IAM management.</p>
-      </div>
-      <div class="proj">
-        <img src="assets/img/project-ai.png" alt="AI project image">
-        <h3>LLM Fine-Tuning Workflows</h3>
-        <p>SFT & RLHF pipelines and evaluation automation.</p>
-      </div>
-    </div>
-  </section>
+                <div class="card glass">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Cloud Infrastructure</h3>
+                    <p>AWS EC2/S3/EBS automation, IAM design, infrastructure hardening, backups & monitoring.</p>
+                </div>
 
-  <section id="contact" class="section glass">
-    <h2>Contact</h2>
-    <form id="contact-form">
-      <input type="text" id="name" name="name" placeholder="Name" required>
-      <input type="email" id="email" name="email" placeholder="Email" required>
-      <textarea id="message" name="message" placeholder="Message" required></textarea>
-      <button class="btn" type="submit">Send</button>
-    </form>
-    <div id="contact-status" role="status" aria-live="polite"></div>
-  </section>
-</main>
+                <div class="card glass">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>DevSecOps</h3>
+                    <p>Security scans (SonarQube, Trivy), OWASP integration, secret scanning, and compliance automation.</p>
+                </div>
 
-<footer class="site-footer">
-  <div>© 2025 Somnath Damale — DevOps · Cloud · AI</div>
-  <div class="footer-links"><a href="https://www.linkedin.com/in/somnathdamale/" target="_blank">LinkedIn</a> · <a href="https://github.com/i-damale" target="_blank">GitHub</a></div>
-</footer>
+                <div class="card glass">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>AI & Automation</h3>
+                    <p>LLM fine-tuning workflows, SFT & RLHF pipelines, and data-driven model evaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title gradient-text">About Me</h2>
+            <div class="about-content glass">
+                <p class="lead">
+                    Analytical and detail-oriented DevOps Engineer with hands-on experience building CI/CD pipelines using Jenkins, Git, AWS, and Bash scripting. Proven ability to troubleshoot systems and collaborate across teams.
+                </p>
+                <p>
+                    Currently building DevOps projects integrating Jenkins, AWS (EC2, S3, EBS), and security tools like OWASP, SonarQube, Trivy and Trufflehog. Transitioning into DevOps by applying past experience in automation & analytics to automate workflows, secure pipelines, and deploy scalable cloud applications.
+                </p>
+                <div class="tech-tags">
+                    <span class="tag">Jenkins</span>
+                    <span class="tag">AWS</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Terraform</span>
+                    <span class="tag">DevSecOps</span>
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">Git/GitHub</span>
+                    <span class="tag">Bash</span>
+                    <span class="tag">Python</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title gradient-text">Featured Projects</h2>
+            
+            <div class="project-featured glass">
+                <div class="project-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                </div>
+                <div class="project-content">
+                    <h3>Jenkins CI/CD + DevSecOps Pipeline</h3>
+                    <p>
+                        Full-featured CI/CD pipeline with automated build, test, security scanning, and blue-green-style deployments on AWS EC2. 
+                        Integrated multiple security tools for comprehensive vulnerability detection and compliance checking.
+                    </p>
+                    <p class="project-tech">
+                        <strong>Tools:</strong> Jenkins, Docker, SonarQube, Trivy, TruffleHog, Nginx, GitHub Webhooks, AWS EC2
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight">✓ Automated security scanning</div>
+                        <div class="highlight">✓ Container orchestration</div>
+                        <div class="highlight">✓ Zero-downtime deployments</div>
+                        <div class="highlight">✓ Webhook-triggered builds</div>
+                    </div>
+                    <a href="https://github.com/i-damale/mern-devsecops-project" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        View Repository
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Metrics -->
+            <div class="metrics-grid">
+                <div class="metric glass">
+                    <div class="metric-value">30%</div>
+                    <div class="metric-label">Automation time saved</div>
+                </div>
+                <div class="metric glass">
+                    <div class="metric-value">5+</div>
+                    <div class="metric-label">Major infra projects</div>
+                </div>
+                <div class="metric glass">
+                    <div class="metric-value">10k+</div>
+                    <div class="metric-label">Lines of infra-as-code</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title gradient-text">Get In Touch</h2>
+            <div class="contact-wrapper glass">
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button id="submit-btn" class="btn btn-primary btn-full">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                        Send Message
+                    </button>
+                    <div id="form-status" class="form-status"></div>
+                </div>
+
+                <div class="contact-info">
+                    <p class="contact-intro">Or reach out directly:</p>
+                    <div class="contact-links">
+                        <a href="mailto:somnath.damale@gmail.com" class="contact-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Email
+                        </a>
+                        <a href="https://www.linkedin.com/in/somnathdamale/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/i-damale" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Somnath Damale · DevOps · Cloud · AI</p>
+            <p class="footer-credit">Built with HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
